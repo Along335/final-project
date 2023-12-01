@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta');
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 242, 216);
+    font-family: 'Allerta', sans-serif;
+    margin: 1%;
+}
+
+header {
+    background-color: rgb(188, 163, 127);
+    padding-top: 1%;
+}
+
+header>div {
+    background-image: url(/Images/space_main.png);
+    opacity: 0.9;
+    height: 200px;
+    margin: 0% 1% 1% 1%;
+    background-position: 100% 30%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+
+}
+
+
+nav>ul {
+    padding-inline-start: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    border-style: outset;
+    padding: 10px;
+    font-size: 120%;
+    color: white;
+    background-color: rgba(17, 57, 70, 0.7);
+    transition: padding 0.5s, border 0.5s;
+    -webkit-transition: padding 0.5s, border 0.5s;
+    -moz-transition: padding 0.5s, border 0.5s;
+    -ms-transition: padding 0.5s, border 0.5s;
+    -o-transition: padding 0.5s, border 0.5s;
+    transition-delay: 0.8s;
+}
+li a:hover{
+    padding: 15px;
+    border-color: yellow;
+}
+.current{
+    border-color: gray;
+    color: ghostwhite;
+    background-color: rgba(17, 57, 70, 1);    
+}
+main h2{
+    text-align: center;
+}
+.main_text{
+    column-count: 2;
+}
+
+header>h1, footer>h1{
+    text-align: center;
+}
+
+main {
+    font-size: 15px;
+}
+
+footer {
+    background-color: rgb(188, 163, 127);
+}
+
+body>a {
+    position: absolute;
+    left: -1000px;
+}
+
+body>a:focus {
+    text-decoration: none;
+    background-color: yellowgreen;
+    left: 10px;
+}
+footer{
+    padding: 30px;
+}
