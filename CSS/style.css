@@ -56,23 +56,28 @@ li a {
     -o-transition: padding 0.5s, border 0.5s;
     transition-delay: 0.8s;
 }
-li a:hover{
+
+li a:hover {
     padding: 15px;
     border-color: yellow;
 }
-.current{
+
+.current {
     border-color: gray;
     color: ghostwhite;
-    background-color: rgba(17, 57, 70, 1);    
+    background-color: rgba(17, 57, 70, 1);
 }
-main h2{
+
+main h2 {
     text-align: center;
 }
-.main_text{
+
+.main_text {
     column-count: 2;
 }
 
-header>h1, footer>h1{
+header>h1,
+footer>h1 {
     text-align: center;
 }
 
@@ -94,6 +99,31 @@ body>a:focus {
     background-color: yellowgreen;
     left: 10px;
 }
-footer{
+
+footer {
     padding: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: stretch;
+    row-gap: 10px;
+}
+
+
+.grid img {
+    border: 3px solid rgb(17, 57, 70);
+    padding: 2px;
+    width: 100%;   
+    opacity: .5;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.grid img:hover{
+    opacity: 1;
 }
