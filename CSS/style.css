@@ -15,6 +15,11 @@ body {
 header {
     background-color: rgb(188, 163, 127);
     padding-top: 1%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 header>div {
@@ -28,9 +33,12 @@ header>div {
     border-style: solid;
     border-color: aliceblue;
     border-width: 2px;
-
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
-
 
 nav>ul {
     padding-inline-start: 0px;
@@ -54,7 +62,7 @@ li a {
     -moz-transition: padding 0.5s, border 0.5s;
     -ms-transition: padding 0.5s, border 0.5s;
     -o-transition: padding 0.5s, border 0.5s;
-    transition-delay: 0.8s;
+    transition-delay: 0.3s;
 }
 
 li a:hover {
@@ -79,6 +87,7 @@ main h2 {
 header>h1,
 footer>h1 {
     text-align: center;
+    padding: 10px;
 }
 
 main {
@@ -87,6 +96,11 @@ main {
 
 footer {
     background-color: rgb(188, 163, 127);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 body>a {
@@ -110,20 +124,64 @@ footer {
     justify-content: space-around;
     align-items: stretch;
     row-gap: 10px;
+    padding-bottom: 2%;
 }
 
 
 .grid img {
     border: 3px solid rgb(17, 57, 70);
     padding: 2px;
-    width: 100%;   
+    width: 100%;
     opacity: .5;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
+    transition: opacity 0.1s, border-width 0.9s, border-color 0.9s;
+    -webkit-transition: opacity 0.1s, border-width 0.9s, border-color 0.9s;
+    -moz-transition: opacity 0.1s, border-width 0.9s, border-color 0.9s;
+    -ms-transition: opacity 0.1s, border-width 0.9s, border-color 0.9s;
+    -o-transition: opacity 0.1s, border-width 0.9s, border-color 0.9s;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
 }
-.grid img:hover{
+
+.grid img:hover {
+    opacity: 1;
+    border-width: 8px;
+    border-color: rgb(24, 85, 105);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex img {
+    background-color: white;
+    border: 5px solid rgb(17, 57, 70);
+    padding: 3px;
+    margin: 5px;
+    width: 400px;
+    opacity: 0.8;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.flex img:nth-child(even) {
+    border: 5px solid red;
+}
+
+.flex img:hover {
+    border-style: outset;
+    border-color: yellowgreen;
     opacity: 1;
 }
