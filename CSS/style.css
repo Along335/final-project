@@ -23,7 +23,7 @@ header {
 }
 
 header>div {
-    background-image: url(/Images/space_main.png);
+    background-image: url(./Images/space_main.png);
     opacity: 0.9;
     height: 200px;
     margin: 0% 1% 1% 1%;
