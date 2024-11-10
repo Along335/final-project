@@ -23,7 +23,7 @@ header {
 }
 
 header>div {
-    background-image: url(./Images/space_main.png);
+    background-image: url(../Images/space_main.png);
     opacity: 0.9;
     height: 200px;
     margin: 0% 1% 1% 1%;
@@ -92,6 +92,7 @@ footer>h1 {
 
 main {
     font-size: 15px;
+    margin-bottom: 3px;
 }
 
 footer {
@@ -184,4 +185,7 @@ footer {
     border-style: outset;
     border-color: yellowgreen;
     opacity: 1;
+}
+a{
+    color: black;
 }
